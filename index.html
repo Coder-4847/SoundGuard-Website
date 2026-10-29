@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title><!--SG:title--></title>
+    <meta name="description" content="<!--SG:description-->" />
+    <meta name="theme-color" content="<!--SG:themeColor-->" />
+    <meta name="color-scheme" content="dark" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SoundGuard" />
+    <meta property="og:title" content="<!--SG:title-->" />
+    <meta property="og:description" content="<!--SG:description-->" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="<!--SG:title-->" />
+    <meta name="twitter:description" content="<!--SG:description-->" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3E%3Crect width='32' height='32' rx='8' fill='%230A1020'/%3E%3Cpath d='M7 13v6M11.5 9.5v13M16 6v20M20.5 10.5v11M25 13v6' stroke='%233DD9C5' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <script>
+      // `js` gates the hidden initial states of animated elements. If the app
+      // script has not started after 4s, drop the gate so content stays readable.
+      document.documentElement.classList.add('js')
+      setTimeout(function () {
+        if (!window.__sgReady) document.documentElement.classList.add('js-failed')
+      }, 4000)
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <p class="noscript">
+        SoundGuard works best with JavaScript turned on, for the scroll animations and the live demo. All of the
+        content is still here to read.
+      </p>
+    </noscript>
+    <!--SG:body-->
+  </body>
+</html>
